@@ -1,6 +1,6 @@
 .intro {
   background-color: $headerBg;
-  height: 100vh;
+  min-height: 100vh;
   header {
     padding: 0 150px;
     background-color: #fff;
@@ -149,6 +149,7 @@
   .tools {
     padding: 0 150px;
     margin-top: 100px;
+    padding-bottom: 50px;
     display: grid;
     // grid-template-columns: repeat(3, 120px);
     grid-template-columns: repeat(auto-fill, minmax(50px, 120px));
@@ -156,10 +157,12 @@
 
     @media screen and (max-width: 1250px) {
       padding: 0 70px;
+      padding-bottom: 50px;
     }
 
     @media screen and (max-width: 950px) {
       padding: 0 20px;
+      padding-bottom: 50px;
     }
 
     @media screen and (max-width: 720px) {
