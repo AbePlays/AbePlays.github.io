@@ -1,0 +1,83 @@
+.web {
+  padding: 0 150px;
+  padding-top: 50px;
+  height: 100vh;
+  background-color: $blueBg;
+
+  &__intro {
+    h1 {
+      color: $darkBlue;
+      font-size: $fontMiddle;
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 70%;
+      font-weight: 700;
+      color: white;
+      font-size: $fontParagraph;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__main {
+    &__title {
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      font-size: $fontMax;
+    }
+
+    .circle {
+      text-align: center;
+      &__div {
+        height: 0.5rem;
+        width: 0.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #fff;
+        opacity: 0.5;
+      }
+    }
+
+    .skills {
+      margin: 0 auto;
+      max-width: 800px;
+      margin-top: 3rem;
+
+      .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 1rem;
+
+        &:not(:last-child) {
+          margin-bottom: 4rem;
+        }
+
+        &__img {
+          max-width: 250px;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        &__des {
+          h1 {
+            color: $darkBlue;
+            font-size: $fontMiddle;
+            font-weight: 700;
+            margin-bottom: 2rem;
+          }
+
+          p {
+            // width: 70%;
+            font-size: $fontParagraph;
+            font-weight: 700;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
