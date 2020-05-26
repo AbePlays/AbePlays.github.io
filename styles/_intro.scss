@@ -1,0 +1,125 @@
+.intro {
+  background-color: $headerBg;
+  height: 100vh;
+  header {
+    padding: 0 150px;
+    background-color: #fff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    h1 {
+      font-weight: 700;
+      font-size: $fontSmall;
+      margin-right: 1rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: $fontXs;
+      color: $grey;
+    }
+  }
+
+  .hero {
+    padding: 0 150px;
+    padding-top: 100px;
+    display: grid;
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2rem 8rem 8rem 3rem;
+    grid-template-areas:
+      "a ."
+      "b i"
+      "c i"
+      "d .";
+
+    &__image {
+      grid-area: i;
+      max-width: 400px;
+      width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .moto {
+      grid-area: a;
+      color: $blue;
+      font-size: $fontSmall;
+      font-weight: 700;
+    }
+
+    h1 {
+      grid-area: b;
+      font-weight: 700;
+      font-size: $fontMax;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    p {
+      grid-area: c;
+      font-weight: 500;
+      font-size: $fontParagraph;
+      color: $greyPara;
+      line-height: 1.5;
+      opacity: 0.7;
+    }
+
+    .links {
+      grid-area: d;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      gap: 3rem;
+
+      .button {
+        text-decoration: none;
+        background-color: $blue;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        font-size: $fontButton;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 20px;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          background-color: #1376a3;
+        }
+      }
+
+      .res {
+        width: fit-content;
+        text-decoration: none;
+        color: $blue;
+        font-weight: 500;
+        font-size: $fontButton;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  .tools {
+    padding: 0 150px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 5rem;
+    &__image {
+      max-height: 50px;
+      max-width: 150px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
