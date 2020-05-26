@@ -1,12 +1,21 @@
 .intro {
   background-color: $headerBg;
-  height: 100vh;
+  //   height: 100vh;
   header {
     padding: 0 150px;
     background-color: #fff;
-    height: 50px;
+    height: 5vh;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 1250px) {
+      padding: 0 70px;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 0 20px;
+    }
+
     h1 {
       font-weight: 700;
       font-size: $fontSmall;
@@ -33,10 +42,31 @@
       "c i"
       "d .";
 
+    @media screen and (max-width: 1250px) {
+      padding: 100px 70px 0 70px;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 100px 20px 0 20px;
+    }
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 3fr 2fr;
+    }
+
+    @media screen and (max-width: 720px) {
+      display: block;
+    }
+
     &__image {
       grid-area: i;
       max-width: 400px;
       width: 100%;
+
+      @media screen and (max-width: 720px) {
+        margin: 0 auto 2rem auto;
+      }
+
       img {
         height: 100%;
         width: 100%;
@@ -48,12 +78,18 @@
       color: $blue;
       font-size: $fontSmall;
       font-weight: 700;
+      @media screen and (max-width: 720px) {
+        margin-bottom: 2rem;
+      }
     }
 
     h1 {
       grid-area: b;
       font-weight: 700;
       font-size: $fontMax;
+      @media screen and (max-width: 720px) {
+        margin-bottom: 2rem;
+      }
 
       span {
         text-decoration: underline;
@@ -67,6 +103,9 @@
       color: $greyPara;
       line-height: 1.5;
       opacity: 0.7;
+      @media screen and (max-width: 720px) {
+        margin-bottom: 2rem;
+      }
     }
 
     .links {
@@ -111,8 +150,23 @@
     padding: 0 150px;
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 120px);
-    gap: 5rem;
+    // grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(auto-fill, minmax(50px, 120px));
+    gap: 1rem 5rem;
+
+    @media screen and (max-width: 1250px) {
+      padding: 0 70px;
+    }
+
+    @media screen and (max-width: 950px) {
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 720px) {
+      margin-top: 50px;
+      gap: 1rem 2rem;
+    }
+
     &__image {
       max-height: 50px;
       max-width: 150px;
