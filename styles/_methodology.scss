@@ -28,19 +28,21 @@
   }
 
   .cards {
-    justify-items: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px 0;
+    // text-align: center;
+    justify-content: center;
+    justify-items: center;
 
     @media screen and (max-width: 950px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 300px);
       grid-template-rows: repeat(3, 1fr);
     }
 
     @media screen and (max-width: 600px) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 300px;
       grid-template-rows: repeat(6, 1fr);
     }
 
@@ -51,15 +53,19 @@
       }
       border-radius: 20px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 300ms ease-in-out;
+      transition: all 500ms ease-in-out;
       background-color: $greyCard;
       padding: 40px;
       height: 350px;
       width: 250px;
 
+      transform: translateY(0%) rotate(0deg);
+
       &:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
           0 10px 10px rgba(0, 0, 0, 0.22);
+
+        transform: translateY(-5%) rotate(2deg);
       }
 
       &__img {
