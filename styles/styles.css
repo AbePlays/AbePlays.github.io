@@ -1,12 +1,17 @@
 .intro {
   background-color: #f5f5f5;
-  min-height: 100vh;
+}
+
+@media screen and (min-width: 1250px) {
+  .intro {
+    min-height: 100vh;
+  }
 }
 
 .intro header {
   padding: 0 150px;
   background-color: #fff;
-  height: 5vh;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,8 +45,7 @@
 }
 
 .intro .hero {
-  padding: 0 150px;
-  padding-top: 100px;
+  padding: 100px 150px 0 150px;
   display: -ms-grid;
   display: grid;
   gap: 2rem 1rem;
@@ -195,33 +199,29 @@
 }
 
 .intro .tools {
-  padding: 0 150px;
+  padding: 0 150px 50px 150px;
   margin-top: 100px;
-  padding-bottom: 50px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50px, 120px))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(50px, 120px));
+  -ms-grid-columns: (minmax(50px, 120px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(50px, 120px));
   gap: 1rem 5rem;
 }
 
 @media screen and (max-width: 1250px) {
   .intro .tools {
-    padding: 0 70px;
-    padding-bottom: 50px;
+    padding: 0 70px 50px 70px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .intro .tools {
-    padding: 0 20px;
-    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
   }
 }
 
 @media screen and (max-width: 720px) {
   .intro .tools {
-    margin-top: 50px;
     gap: 1rem 2rem;
   }
 }
@@ -727,7 +727,7 @@
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
