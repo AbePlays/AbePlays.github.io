@@ -46,6 +46,7 @@
     }
 
     .link {
+      cursor: pointer;
       transition: all 300ms ease-in-out;
 
       @media screen and (max-width: 950px) {
@@ -74,7 +75,6 @@
       height: 150px;
 
       a {
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
