@@ -26,7 +26,7 @@
 
   &__content {
     > *::selection {
-      background-color: #4a999e;
+      background-color: $selectIos;
     }
     flex: 2;
     h4 {
@@ -65,7 +65,7 @@
 
   &__img {
     > *::selection {
-      background-color: #4a999e;
+      background-color: $selectIos;
     }
     flex: 3;
     margin: 0 auto;

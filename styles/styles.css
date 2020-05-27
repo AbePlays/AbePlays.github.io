@@ -20,6 +20,14 @@
           align-items: center;
 }
 
+.intro header > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro header > *::selection {
+  background-color: #bebdbd;
+}
+
 @media screen and (max-width: 1250px) {
   .intro header {
     padding: 0 70px;
@@ -56,6 +64,14 @@
       grid-template-areas: "a ." "b i" "c i" "d .";
 }
 
+.intro .hero > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .hero > *::selection {
+  background-color: #bebdbd;
+}
+
 @media screen and (max-width: 1250px) {
   .intro .hero {
     padding: 100px 70px 0 70px;
@@ -88,6 +104,14 @@
   grid-area: i;
   max-width: 400px;
   width: 100%;
+}
+
+.intro .hero__image > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .hero__image > *::selection {
+  background-color: #bebdbd;
 }
 
 @media screen and (max-width: 720px) {
@@ -134,6 +158,14 @@
   text-decoration: underline;
 }
 
+.intro .hero h1 span::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .hero h1 span::selection {
+  background-color: #bebdbd;
+}
+
 .intro .hero p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -163,6 +195,14 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 3rem;
+}
+
+.intro .hero .links > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .hero .links > *::selection {
+  background-color: #bebdbd;
 }
 
 .intro .hero .links .button {
@@ -208,6 +248,14 @@
   gap: 1rem 5rem;
 }
 
+.intro .tools > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .tools > *::selection {
+  background-color: #bebdbd;
+}
+
 @media screen and (max-width: 1250px) {
   .intro .tools {
     padding: 0 70px 50px 70px;
@@ -229,6 +277,14 @@
 .intro .tools__image {
   max-height: 50px;
   max-width: 150px;
+}
+
+.intro .tools__image > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.intro .tools__image > *::selection {
+  background-color: #bebdbd;
 }
 
 .intro .tools__image img {
@@ -274,11 +330,11 @@
 }
 
 .web__intro > *::-moz-selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__intro > *::selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__intro h1 {
@@ -303,11 +359,11 @@
 }
 
 .web__main > *::-moz-selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__main > *::selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__main__title {
@@ -388,11 +444,11 @@
 }
 
 .web__main .skill__img > *::-moz-selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__main .skill__img > *::selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 @media screen and (max-width: 720px) {
@@ -407,11 +463,11 @@
 }
 
 .web__main .skill__des > *::-moz-selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__main .skill__des > *::selection {
-  background-color: #4288df;
+  background-color: #90bffc;
 }
 
 .web__main .skill__des h1 {
@@ -468,11 +524,11 @@
 }
 
 .ios__content > *::-moz-selection {
-  background-color: #4a999e;
+  background-color: #2bbac2;
 }
 
 .ios__content > *::selection {
-  background-color: #4a999e;
+  background-color: #2bbac2;
 }
 
 .ios__content h4 {
@@ -532,11 +588,11 @@
 }
 
 .ios__img > *::-moz-selection {
-  background-color: #4a999e;
+  background-color: #2bbac2;
 }
 
 .ios__img > *::selection {
-  background-color: #4a999e;
+  background-color: #2bbac2;
 }
 
 .ios__img img {
@@ -573,6 +629,14 @@
   color: white;
   font-size: 3.125rem;
   margin-bottom: 50px;
+}
+
+.methodology h1::-moz-selection {
+  background-color: #f8a862;
+}
+
+.methodology h1::selection {
+  background-color: #f8a862;
 }
 
 .methodology .cards {
@@ -616,6 +680,16 @@
   width: 250px;
 }
 
+.methodology .cards .card > *::-moz-selection {
+  color: white;
+  background-color: #f8a862;
+}
+
+.methodology .cards .card > *::selection {
+  color: white;
+  background-color: #f8a862;
+}
+
 .methodology .cards .card:hover {
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -632,6 +706,14 @@
   width: 100%;
 }
 
+.methodology .cards .card__img img::-moz-selection {
+  background-color: #f8a862;
+}
+
+.methodology .cards .card__img img::selection {
+  background-color: #f8a862;
+}
+
 .methodology .cards .card h4 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
@@ -641,6 +723,16 @@
   font-size: 1.75rem;
   color: #22969e;
   margin-right: 1rem;
+}
+
+.methodology .cards .card h4 span::-moz-selection {
+  color: white;
+  background-color: #f8a862;
+}
+
+.methodology .cards .card h4 span::selection {
+  color: white;
+  background-color: #f8a862;
 }
 
 .methodology .cards .card p {
@@ -677,6 +769,14 @@
     padding-bottom: 50px;
     display: block;
   }
+}
+
+.footer__text > *::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.footer__text > *::selection {
+  background-color: #bebdbd;
 }
 
 @media screen and (max-width: 950px) {
@@ -770,6 +870,14 @@
 .footer__links .link img {
   height: 40px;
   width: 40px;
+}
+
+.footer__links .link img::-moz-selection {
+  background-color: #bebdbd;
+}
+
+.footer__links .link img::selection {
+  background-color: #bebdbd;
 }
 
 @media screen and (max-width: 650px) {

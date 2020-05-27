@@ -24,7 +24,7 @@
     }
 
     > *::selection {
-      background-color: #4288df;
+      background-color: $selectWeb;
     }
 
     h1 {
@@ -49,7 +49,7 @@
 
   &__main {
     > *::selection {
-      background-color: #4288df;
+      background-color: $selectWeb;
     }
     &__title {
       text-align: center;
@@ -114,7 +114,7 @@
 
       &__img {
         > *::selection {
-          background-color: #4288df;
+          background-color: $selectWeb;
         }
         max-width: 250px;
         max-height: 180px;
@@ -131,7 +131,7 @@
 
       &__des {
         > *::selection {
-          background-color: #4288df;
+          background-color: $selectWeb;
         }
         h1 {
           color: $darkBlue;
