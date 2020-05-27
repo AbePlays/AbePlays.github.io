@@ -5,22 +5,23 @@
     rgba(116, 186, 191, 0.84) 100%
   );
   background-blend-mode: multiply;
-  padding: 0 150px;
-  padding-top: 50px;
-  min-height: 100vh;
+  padding: 50px 150px 50px 150px;
+  // min-height: 100vh;
   display: flex;
   align-items: center;
   color: white;
 
+  @media screen and (min-width: 1250px) {
+    min-height: 100vh;
+  }
+
   @media screen and (max-width: 1250px) {
-    padding: 0 70px;
-    padding-top: 50px;
+    padding: 50px 70px 50px 70px;
   }
 
   @media screen and (max-width: 950px) {
-    padding: 0 20px;
+    padding: 50px 20px 50px 20px;
     background: rgba(116, 186, 191, 0.84);
-    padding-top: 50px;
     display: block;
   }
 
@@ -50,6 +51,7 @@
         width: 100%;
         margin-bottom: 3rem;
       }
+      line-height: 1.5;
       width: 90%;
       font-weight: 700;
       font-size: $fontSmall;
@@ -59,7 +61,7 @@
   &__img {
     flex: 3;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 600px;
     img {
       height: 100%;
       width: 100%;

@@ -391,9 +391,7 @@
 .ios {
   background: radial-gradient(28.43% 50% at 50% 50%, rgba(116, 173, 191, 0) 0%, rgba(116, 186, 191, 0.84) 100%);
   background-blend-mode: multiply;
-  padding: 0 150px;
-  padding-top: 50px;
-  min-height: 100vh;
+  padding: 50px 150px 50px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,18 +401,22 @@
   color: white;
 }
 
+@media screen and (min-width: 1250px) {
+  .ios {
+    min-height: 100vh;
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .ios {
-    padding: 0 70px;
-    padding-top: 50px;
+    padding: 50px 70px 50px 70px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .ios {
-    padding: 0 20px;
+    padding: 50px 20px 50px 20px;
     background: rgba(116, 186, 191, 0.84);
-    padding-top: 50px;
     display: block;
   }
 }
@@ -452,6 +454,7 @@
 }
 
 .ios__content p {
+  line-height: 1.5;
   width: 90%;
   font-weight: 700;
   font-size: 1.25rem;
@@ -469,7 +472,7 @@
       -ms-flex: 3;
           flex: 3;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 600px;
 }
 
 .ios__img img {
