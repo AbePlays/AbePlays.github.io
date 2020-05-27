@@ -467,11 +467,27 @@
           flex: 2;
 }
 
+.ios__content > *::-moz-selection {
+  background-color: #4a999e;
+}
+
+.ios__content > *::selection {
+  background-color: #4a999e;
+}
+
 .ios__content h4 {
   width: 150%;
   color: #09606b;
   font-size: 1.75rem;
   margin-bottom: 3rem;
+}
+
+.ios__content h4::-moz-selection {
+  color: black;
+}
+
+.ios__content h4::selection {
+  color: black;
 }
 
 @media screen and (max-width: 950px) {
@@ -513,6 +529,14 @@
           flex: 3;
   margin: 0 auto;
   max-width: 600px;
+}
+
+.ios__img > *::-moz-selection {
+  background-color: #4a999e;
+}
+
+.ios__img > *::selection {
+  background-color: #4a999e;
 }
 
 .ios__img img {
