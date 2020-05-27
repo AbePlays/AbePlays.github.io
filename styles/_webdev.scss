@@ -2,6 +2,10 @@
   padding: 50px 150px 50px 150px;
   background-color: $blueBg;
 
+  h1::selection {
+    color: black;
+  }
+
   @media screen and (min-width: 1400px) {
     min-height: 100vh;
   }
@@ -17,6 +21,10 @@
   &__intro {
     @media screen and (max-width: 720px) {
       text-align: center;
+    }
+
+    > *::selection {
+      background-color: #4288df;
     }
 
     h1 {
@@ -40,6 +48,9 @@
   }
 
   &__main {
+    > *::selection {
+      background-color: #4288df;
+    }
     &__title {
       text-align: center;
       color: white;
@@ -102,6 +113,9 @@
       }
 
       &__img {
+        > *::selection {
+          background-color: #4288df;
+        }
         max-width: 250px;
         max-height: 180px;
 
@@ -116,6 +130,9 @@
       }
 
       &__des {
+        > *::selection {
+          background-color: #4288df;
+        }
         h1 {
           color: $darkBlue;
           font-size: $fontMiddle;

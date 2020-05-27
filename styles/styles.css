@@ -241,6 +241,14 @@
   background-color: #63a6ff;
 }
 
+.web h1::-moz-selection {
+  color: black;
+}
+
+.web h1::selection {
+  color: black;
+}
+
 @media screen and (min-width: 1400px) {
   .web {
     min-height: 100vh;
@@ -265,6 +273,14 @@
   }
 }
 
+.web__intro > *::-moz-selection {
+  background-color: #4288df;
+}
+
+.web__intro > *::selection {
+  background-color: #4288df;
+}
+
 .web__intro h1 {
   color: #1b63c2;
   font-size: 1.75rem;
@@ -284,6 +300,14 @@
   .web__intro p {
     width: 100%;
   }
+}
+
+.web__main > *::-moz-selection {
+  background-color: #4288df;
+}
+
+.web__main > *::selection {
+  background-color: #4288df;
 }
 
 .web__main__title {
@@ -363,6 +387,14 @@
   max-height: 180px;
 }
 
+.web__main .skill__img > *::-moz-selection {
+  background-color: #4288df;
+}
+
+.web__main .skill__img > *::selection {
+  background-color: #4288df;
+}
+
 @media screen and (max-width: 720px) {
   .web__main .skill__img {
     margin: 0 auto;
@@ -372,6 +404,14 @@
 .web__main .skill__img img {
   height: 100%;
   width: 100%;
+}
+
+.web__main .skill__des > *::-moz-selection {
+  background-color: #4288df;
+}
+
+.web__main .skill__des > *::selection {
+  background-color: #4288df;
 }
 
 .web__main .skill__des h1 {
