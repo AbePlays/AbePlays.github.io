@@ -27,13 +27,16 @@
     h1 {
       font-weight: 700;
       font-size: $fontSmall;
-      margin-right: 1rem;
-    }
 
-    p {
-      font-weight: 500;
-      font-size: $fontXs;
-      color: $grey;
+      span {
+        &::selection {
+          background-color: $selectIntro;
+        }
+        margin-left: 1rem;
+        font-weight: 500;
+        font-size: $fontXs;
+        color: $grey;
+      }
     }
   }
 
