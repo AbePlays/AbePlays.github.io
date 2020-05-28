@@ -92,7 +92,7 @@
           "i2"
           "t2";
 
-        gap: 1rem 0;
+        gap: 2rem 0;
       }
 
       .img__first {
@@ -117,7 +117,7 @@
           background-color: $selectWeb;
         }
         max-width: 250px;
-        max-height: 180px;
+        height: 180px;
 
         @media screen and (max-width: 720px) {
           margin: 0 auto;
