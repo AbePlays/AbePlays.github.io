@@ -176,7 +176,7 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 120px));
-    gap: 1rem 5rem;
+    gap: 1rem 3rem;
 
     @media screen and (max-width: 1250px) {
       padding: 0 70px 50px 70px;
@@ -192,6 +192,7 @@
     }
 
     &__image {
+      object-fit: contain;
       > *::selection {
         background-color: $selectIntro;
       }
