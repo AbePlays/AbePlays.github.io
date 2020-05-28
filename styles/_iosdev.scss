@@ -64,6 +64,9 @@
   }
 
   &__img {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 1s ease-in-out;
     > *::selection {
       background-color: $selectIos;
     }
@@ -75,4 +78,9 @@
       width: 100%;
     }
   }
+}
+
+.img__appear {
+  opacity: 1;
+  transform: translateY(0px);
 }

@@ -580,6 +580,11 @@
 }
 
 .ios__img {
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
@@ -598,6 +603,12 @@
 .ios__img img {
   height: 100%;
   width: 100%;
+}
+
+.img__appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .methodology {

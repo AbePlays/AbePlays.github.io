@@ -1,3 +1,5 @@
+// Loading Screen Animation
+
 const loader = document.querySelector(".loader");
 const main = document.querySelector(".main");
 
@@ -12,3 +14,19 @@ function init() {
 }
 
 init();
+
+// Tween Animation
+// const tl = TimelineMax();
+
+// iPhone Animation
+function iphoneAnimation() {
+  const iPhone = document.querySelector(".ios__img");
+  var iPhonePos = iPhone.getBoundingClientRect().top;
+  var screenPos = window.innerHeight;
+
+  if (iPhonePos < screenPos) {
+    iPhone.classList.add("img__appear");
+  }
+}
+
+window.addEventListener("scroll", iphoneAnimation);
