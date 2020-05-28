@@ -33,7 +33,7 @@ function cardAnimation() {
   const cards = document.querySelectorAll(".card");
 
   var cardPos = cards[0].getBoundingClientRect().top;
-  var screenPos = window.innerHeight;
+  var screenPos = window.innerHeight / 1.5;
 
   if (cardPos < screenPos) {
     cards.forEach((card) => {
@@ -43,3 +43,17 @@ function cardAnimation() {
 }
 
 window.addEventListener("scroll", cardAnimation);
+
+// Footer Animation
+function footerAnimation() {
+  const links = document.querySelector(".footer__links");
+
+  var linkPos = links.getBoundingClientRect().top;
+  var screenPos = window.innerHeight;
+
+  if (linkPos < screenPos) {
+    links.classList.add("links__appear");
+  }
+}
+
+window.addEventListener("scroll", footerAnimation);

@@ -40,6 +40,9 @@
   }
 
   &__links {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-in-out;
     align-self: flex-end;
     display: flex;
     justify-content: space-between;
@@ -99,4 +102,9 @@
       }
     }
   }
+}
+
+.links__appear {
+  opacity: 1 !important;
+  transform: translateY(0px);
 }

@@ -823,6 +823,11 @@
 }
 
 .footer__links {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -910,6 +915,12 @@
     height: 30px;
     width: 30px;
   }
+}
+
+.links__appear {
+  opacity: 1 !important;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 * {
