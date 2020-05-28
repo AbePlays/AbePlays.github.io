@@ -15,14 +15,11 @@ function init() {
 
 init();
 
-// Tween Animation
-// const tl = TimelineMax();
-
 // iPhone Animation
 function iphoneAnimation() {
   const iPhone = document.querySelector(".ios__img");
   var iPhonePos = iPhone.getBoundingClientRect().top;
-  var screenPos = window.innerHeight;
+  var screenPos = window.innerHeight / 1.5;
 
   if (iPhonePos < screenPos) {
     iPhone.classList.add("img__appear");
@@ -30,3 +27,19 @@ function iphoneAnimation() {
 }
 
 window.addEventListener("scroll", iphoneAnimation);
+
+// Methodology Animation
+function cardAnimation() {
+  const cards = document.querySelectorAll(".card");
+
+  var cardPos = cards[0].getBoundingClientRect().top;
+  var screenPos = window.innerHeight;
+
+  if (cardPos < screenPos) {
+    cards.forEach((card) => {
+      card.classList.add("card__appear");
+    });
+  }
+}
+
+window.addEventListener("scroll", cardAnimation);
