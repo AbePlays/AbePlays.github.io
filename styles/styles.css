@@ -304,7 +304,7 @@
 
 .web {
   padding: 50px 150px 50px 150px;
-  background-color: #63a6ff;
+  background: linear-gradient(345deg, #4890e0 50%, #3d86da 50%);
 }
 
 .web h1::-moz-selection {
@@ -393,7 +393,7 @@
   border-radius: 50%;
   display: inline-block;
   background-color: #fff;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 
 .web__main .skill {
