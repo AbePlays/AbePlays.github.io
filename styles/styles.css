@@ -1021,4 +1021,99 @@ body {
             transform: translate3d(0, -16px, 0);
   }
 }
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+#logo {
+  -webkit-animation: logo 1s infinite alternate ease-in-out;
+          animation: logo 1s infinite alternate ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+#hand {
+  -webkit-animation: hand 400ms infinite alternate ease-in-out;
+          animation: hand 400ms infinite alternate ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  transform-box: fill-box;
+}
+
+#face {
+  -webkit-animation: face 700ms infinite alternate ease-in-out;
+          animation: face 700ms infinite alternate ease-in-out;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@-webkit-keyframes hand {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+}
+
+@keyframes hand {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-3%);
+            transform: translateY(-3%);
+  }
+}
+
+@-webkit-keyframes face {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+}
+
+@keyframes face {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
