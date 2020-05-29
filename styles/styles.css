@@ -1028,8 +1028,8 @@ svg {
 }
 
 #logo {
-  -webkit-animation: logo 1s infinite alternate ease-in-out;
-          animation: logo 1s infinite alternate ease-in-out;
+  -webkit-animation: logo 700ms infinite alternate ease-in-out;
+          animation: logo 700ms infinite alternate ease-in-out;
   -webkit-transform-origin: center;
           transform-origin: center;
   transform-box: fill-box;
