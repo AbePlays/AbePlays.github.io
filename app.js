@@ -10,7 +10,7 @@ function init() {
 
     main.style.display = "block";
     setTimeout(() => (main.style.opacity = 1), 50);
-  }, 0);
+  }, 3000);
 }
 
 init();
