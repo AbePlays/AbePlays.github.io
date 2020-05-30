@@ -893,6 +893,15 @@
   border: 1px solid red;
 }
 
+.skills .left h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.skills .left .cards {
+  color: #606060;
+}
+
 .skills .left .cards .card {
   border: 1px solid black;
   display: -ms-grid;
@@ -918,8 +927,32 @@
   width: 100%;
 }
 
+.skills .left .cards .card__text h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.skills .left .cards .card__text h1 span {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.skills .left .cards .card__text p {
+  font-size: 1rem;
+}
+
 .skills .right {
   border: 1px solid red;
+}
+
+.skills .right h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.skills .right .cards {
+  color: #606060;
 }
 
 .skills .right .cards .card {
@@ -945,6 +978,15 @@
   border-radius: 50%;
   height: 100%;
   width: 100%;
+}
+
+.skills .right .cards .card__text h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.skills .right .cards .card__text p {
+  font-size: 1rem;
 }
 
 .footer {
