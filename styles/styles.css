@@ -903,6 +903,21 @@
   margin-bottom: 2rem;
 }
 
+.skills .left .cards .card__img {
+  border-radius: 50%;
+  background-color: #606060;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 70px;
+  width: 70px;
+}
+
+.skills .left .cards .card__img img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
 .skills .right {
   border: 1px solid red;
 }
@@ -915,6 +930,21 @@
       grid-template-columns: 1fr 4fr;
   gap: 0 1rem;
   margin-bottom: 2rem;
+}
+
+.skills .right .cards .card__img {
+  border-radius: 50%;
+  background-color: #606060;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 70px;
+  width: 70px;
+}
+
+.skills .right .cards .card__img img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
 }
 
 .footer {
