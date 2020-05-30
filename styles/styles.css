@@ -930,7 +930,7 @@
 
 .skills .left .cards .card__text h1 {
   font-size: 1.25rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .skills .left .cards .card__text h1 span {
@@ -942,6 +942,7 @@
 .skills .left .cards .card__text p {
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .skills .right h1 {
@@ -985,7 +986,7 @@
 
 .skills .right .cards .card__text h1 {
   font-size: 1.25rem;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .skills .right .cards .card__text h1 span {
@@ -997,6 +998,7 @@
 .skills .right .cards .card__text p {
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .footer {

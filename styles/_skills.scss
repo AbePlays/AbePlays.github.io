@@ -45,7 +45,7 @@
         &__text {
           h1 {
             font-size: $fontSmall;
-            margin-bottom: 0;
+            margin-bottom: 0.5rem;
 
             span {
               font-size: $fontParagraph;
@@ -57,6 +57,7 @@
           p {
             font-weight: 400;
             font-size: $fontParagraph;
+            line-height: 1.5;
           }
         }
       }
@@ -95,7 +96,7 @@
         &__text {
           h1 {
             font-size: $fontSmall;
-            margin-bottom: 0;
+            margin-bottom: 0.5rem;
             span {
               font-size: $fontParagraph;
               font-weight: 500;
@@ -106,6 +107,7 @@
           p {
             font-weight: 400;
             font-size: $fontParagraph;
+            line-height: 1.5;
           }
         }
       }
