@@ -1,0 +1,41 @@
+.skills {
+  background-color: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 0 2rem;
+  padding: 50px 150px 50px 150px;
+
+  @media screen and (max-width: 1250px) {
+    padding: 50px 70px 50px 70px;
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 50px 20px 50px 20px;
+  }
+  .left {
+    border: 1px solid red;
+
+    .cards {
+      .card {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 0 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .right {
+    border: 1px solid red;
+    .cards {
+      .card {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 0 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
