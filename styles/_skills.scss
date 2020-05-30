@@ -13,102 +13,52 @@
     padding: 50px 20px 50px 20px;
   }
 
-  .left {
-    h1 {
-      font-size: $fontMiddle;
-      margin-bottom: 2rem;
-    }
-
-    .cards {
-      color: #606060;
-
-      .card {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        gap: 0 1rem;
-        margin-bottom: 2rem;
-
-        &__img {
-          border-radius: 50%;
-          background-color: #606060;
-          justify-self: center;
-          height: 50px;
-          width: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img {
-            width: 70%;
-          }
-        }
-
-        &__text {
-          h1 {
-            font-size: $fontSmall;
-            margin-bottom: 0.5rem;
-
-            span {
-              font-size: $fontParagraph;
-              font-weight: 500;
-              margin-left: 0.5rem;
-            }
-          }
-
-          p {
-            font-weight: 400;
-            font-size: $fontParagraph;
-            line-height: 1.5;
-          }
-        }
-      }
-    }
+  h1 {
+    letter-spacing: 0.3rem;
+    font-size: $fontMiddle;
+    margin-bottom: 2rem;
   }
 
-  .right {
-    h1 {
-      font-size: $fontMiddle;
+  .cards {
+    color: #606060;
+
+    .card {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      gap: 0 1rem;
       margin-bottom: 2rem;
-    }
 
-    .cards {
-      color: #606060;
+      &__img {
+        border-radius: 50%;
+        background-color: #606060;
+        justify-self: center;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 70%;
+        }
+      }
 
-      .card {
-        display: grid;
-        grid-template-columns: 1fr 4fr;
-        gap: 0 1rem;
-        margin-bottom: 2rem;
+      &__text {
+        h1 {
+          letter-spacing: 0;
+          font-size: $fontSmall;
+          margin-bottom: 0.5rem;
 
-        &__img {
-          border-radius: 50%;
-          background-color: #606060;
-          justify-self: center;
-          height: 50px;
-          width: 50px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          img {
-            width: 70%;
+          span {
+            font-size: $fontParagraph;
+            font-weight: 500;
+            margin-left: 0.5rem;
           }
         }
 
-        &__text {
-          h1 {
-            font-size: $fontSmall;
-            margin-bottom: 0.5rem;
-            span {
-              font-size: $fontParagraph;
-              font-weight: 500;
-              margin-left: 0.5rem;
-            }
-          }
-
-          p {
-            font-weight: 400;
-            font-size: $fontParagraph;
-            line-height: 1.5;
-          }
+        p {
+          font-weight: 400;
+          font-size: $fontParagraph;
+          line-height: 1.5;
         }
       }
     }

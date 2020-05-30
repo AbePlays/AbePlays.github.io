@@ -889,16 +889,17 @@
   }
 }
 
-.skills .left h1 {
+.skills h1 {
+  letter-spacing: 0.3rem;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-.skills .left .cards {
+.skills .cards {
   color: #606060;
 }
 
-.skills .left .cards .card {
+.skills .cards .card {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -907,7 +908,7 @@
   margin-bottom: 2rem;
 }
 
-.skills .left .cards .card__img {
+.skills .cards .card__img {
   border-radius: 50%;
   background-color: #606060;
   justify-self: center;
@@ -924,78 +925,23 @@
           align-items: center;
 }
 
-.skills .left .cards .card__img img {
+.skills .cards .card__img img {
   width: 70%;
 }
 
-.skills .left .cards .card__text h1 {
+.skills .cards .card__text h1 {
+  letter-spacing: 0;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.skills .left .cards .card__text h1 span {
+.skills .cards .card__text h1 span {
   font-size: 1rem;
   font-weight: 500;
   margin-left: 0.5rem;
 }
 
-.skills .left .cards .card__text p {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.skills .right h1 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.skills .right .cards {
-  color: #606060;
-}
-
-.skills .right .cards .card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 4fr;
-      grid-template-columns: 1fr 4fr;
-  gap: 0 1rem;
-  margin-bottom: 2rem;
-}
-
-.skills .right .cards .card__img {
-  border-radius: 50%;
-  background-color: #606060;
-  justify-self: center;
-  height: 50px;
-  width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .right .cards .card__img img {
-  width: 70%;
-}
-
-.skills .right .cards .card__text h1 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.skills .right .cards .card__text h1 span {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-left: 0.5rem;
-}
-
-.skills .right .cards .card__text p {
+.skills .cards .card__text p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
