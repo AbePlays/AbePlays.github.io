@@ -889,10 +889,6 @@
   }
 }
 
-.skills .left {
-  border: 1px solid red;
-}
-
 .skills .left h1 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
@@ -903,7 +899,6 @@
 }
 
 .skills .left .cards .card {
-  border: 1px solid black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -915,16 +910,22 @@
 .skills .left .cards .card__img {
   border-radius: 50%;
   background-color: #606060;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  height: 70px;
-  width: 70px;
+  justify-self: center;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills .left .cards .card__img img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 .skills .left .cards .card__text h1 {
@@ -934,16 +935,13 @@
 
 .skills .left .cards .card__text h1 span {
   font-size: 1rem;
-  font-weight: 400;
-  margin-left: 1rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
 }
 
 .skills .left .cards .card__text p {
+  font-weight: 400;
   font-size: 1rem;
-}
-
-.skills .right {
-  border: 1px solid red;
 }
 
 .skills .right h1 {
@@ -956,7 +954,6 @@
 }
 
 .skills .right .cards .card {
-  border: 1px solid black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -968,16 +965,22 @@
 .skills .right .cards .card__img {
   border-radius: 50%;
   background-color: #606060;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  height: 70px;
-  width: 70px;
+  justify-self: center;
+  height: 60px;
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skills .right .cards .card__img img {
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  width: 80%;
 }
 
 .skills .right .cards .card__text h1 {
@@ -985,7 +988,14 @@
   margin-bottom: 0;
 }
 
+.skills .right .cards .card__text h1 span {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
 .skills .right .cards .card__text p {
+  font-weight: 400;
   font-size: 1rem;
 }
 
