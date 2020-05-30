@@ -346,6 +346,7 @@
 @media screen and (max-width: 600px) {
   .probs__left {
     margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -356,18 +357,6 @@
 .probs__left p {
   font-size: 1.25rem;
   font-weight: 500;
-}
-
-@media screen and (max-width: 600px) {
-  .probs__left {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-}
-
-.probs__right {
-  -ms-flex-line-pack: center;
-      align-content: center;
 }
 
 .probs__right table {
@@ -889,6 +878,14 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .skills {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
 .skills h1 {
   letter-spacing: 0.2rem;
   font-size: 1.75rem;
@@ -906,6 +903,12 @@
       grid-template-columns: 1fr 4fr;
   gap: 0 1rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 450px) {
+  .skills .cards .card {
+    gap: 0.3rem;
+  }
 }
 
 .skills .cards .card__img {

@@ -13,6 +13,11 @@
     padding: 50px 20px 50px 20px;
   }
 
+  @media screen and(max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
   h1 {
     letter-spacing: 0.2rem;
     font-size: $fontMiddle;
@@ -27,6 +32,10 @@
       grid-template-columns: 1fr 4fr;
       gap: 0 1rem;
       margin-bottom: 2rem;
+
+      @media screen and (max-width: 450px) {
+        gap: 0.3rem;
+      }
 
       &__img {
         border-radius: 50%;

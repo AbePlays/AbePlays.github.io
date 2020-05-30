@@ -27,6 +27,7 @@
 
     @media screen and (max-width: 600px) {
       margin-right: 0;
+      margin-bottom: 2rem;
     }
 
     h1 {
@@ -37,15 +38,9 @@
       font-size: $fontSmall;
       font-weight: 500;
     }
-
-    @media screen and (max-width: 600px) {
-      margin-right: 0;
-      margin-bottom: 2rem;
-    }
   }
 
   &__right {
-    align-content: center;
     table {
       border-spacing: 0 1rem;
       @media screen and (max-width: 600px) {
@@ -53,7 +48,7 @@
       }
       tr {
         td {
-          border-bottom: 1px solid #f5f5f5;
+          border-bottom: 1px solid $headerBg;
           padding-bottom: 0.5rem;
           color: $greyPara;
           font-size: $fontParagraph;
