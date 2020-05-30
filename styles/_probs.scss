@@ -1,0 +1,48 @@
+.probs {
+  padding: 50px 150px 50px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1250px) {
+    padding: 50px 70px 50px 70px;
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 50px 20px 50px 20px;
+  }
+
+  p {
+    color: $greyPara;
+    font-weight: 500;
+  }
+
+  &__left {
+    text-align: center;
+    margin-right: 5rem;
+
+    h1 {
+      font-size: $fontMax;
+    }
+
+    p {
+      font-size: $fontSmall;
+      font-weight: 500;
+    }
+  }
+
+  &__right {
+    > * {
+      display: grid;
+      grid-template-columns: 100px 35px;
+      gap: 0 10rem;
+      grid-template-rows: 1fr;
+      border-bottom: 1px solid $headerBg;
+      font-size: $fontParagraph;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
