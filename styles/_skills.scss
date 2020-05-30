@@ -1,5 +1,5 @@
 .skills {
-  background-color: #f5f5f5;
+  background-color: $headerBg;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 0 2rem;
@@ -20,7 +20,7 @@
   }
 
   .cards {
-    color: #606060;
+    color: $greyPara;
 
     .card {
       display: grid;
@@ -30,7 +30,7 @@
 
       &__img {
         border-radius: 50%;
-        background-color: #606060;
+        background-color: $greyPara;
         justify-self: center;
         height: 50px;
         width: 50px;

@@ -896,7 +896,7 @@
 }
 
 .skills .cards {
-  color: #606060;
+  color: #666;
 }
 
 .skills .cards .card {
@@ -910,7 +910,7 @@
 
 .skills .cards .card__img {
   border-radius: 50%;
-  background-color: #606060;
+  background-color: #666;
   justify-self: center;
   height: 50px;
   width: 50px;
