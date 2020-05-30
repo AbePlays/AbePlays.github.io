@@ -303,7 +303,7 @@
 }
 
 .probs {
-  padding: 100px 150px 100px 150px;
+  padding: 80px 150px 80px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,13 +317,13 @@
 
 @media screen and (max-width: 1250px) {
   .probs {
-    padding: 100px 70px 100px 70px;
+    padding: 80px 70px 80px 70px;
   }
 }
 
 @media screen and (max-width: 950px) {
   .probs {
-    padding: 100px 20px 100px 20px;
+    padding: 80px 20px 80px 20px;
   }
 }
 
@@ -381,13 +381,15 @@
 }
 
 .probs__right table tr td {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 0.5rem;
   color: #666;
   font-size: 1rem;
   font-weight: 500;
 }
 
 .probs__right table tr td:not(:last-child) {
-  padding-right: 5rem;
+  padding-right: 6rem;
 }
 
 .web {
