@@ -891,7 +891,7 @@
 
 .skills .left h1 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skills .left .cards {
@@ -911,8 +911,8 @@
   border-radius: 50%;
   background-color: #606060;
   justify-self: center;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,7 +925,7 @@
 }
 
 .skills .left .cards .card__img img {
-  width: 80%;
+  width: 70%;
 }
 
 .skills .left .cards .card__text h1 {
@@ -946,7 +946,7 @@
 
 .skills .right h1 {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .skills .right .cards {
@@ -966,8 +966,8 @@
   border-radius: 50%;
   background-color: #606060;
   justify-self: center;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,7 +980,7 @@
 }
 
 .skills .right .cards .card__img img {
-  width: 80%;
+  width: 70%;
 }
 
 .skills .right .cards .card__text h1 {
