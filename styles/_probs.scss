@@ -1,15 +1,19 @@
 .probs {
-  padding: 50px 150px 50px 150px;
+  padding: 100px 150px 100px 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media screen and (max-width: 1250px) {
-    padding: 50px 70px 50px 70px;
+    padding: 100px 70px 100px 70px;
   }
 
   @media screen and (max-width: 950px) {
-    padding: 50px 20px 50px 20px;
+    padding: 100px 20px 100px 20px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: block;
   }
 
   p {
@@ -21,6 +25,10 @@
     text-align: center;
     margin-right: 5rem;
 
+    @media screen and (max-width: 600px) {
+      margin-right: 0;
+    }
+
     h1 {
       font-size: $fontMax;
     }
@@ -29,19 +37,29 @@
       font-size: $fontSmall;
       font-weight: 500;
     }
+
+    @media screen and (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
   }
 
   &__right {
-    > * {
-      display: grid;
-      grid-template-columns: 100px 35px;
-      gap: 0 10rem;
-      grid-template-rows: 1fr;
-      border-bottom: 1px solid $headerBg;
-      font-size: $fontParagraph;
-
-      &:not(:last-child) {
-        margin-bottom: 1rem;
+    align-content: center;
+    table {
+      border-spacing: 0 1rem;
+      @media screen and (max-width: 600px) {
+        margin: 0 auto;
+      }
+      tr {
+        td {
+          color: $greyPara;
+          font-size: $fontParagraph;
+          font-weight: 500;
+          &:not(:last-child) {
+            padding-right: 5rem;
+          }
+        }
       }
     }
   }
